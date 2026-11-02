@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lingo Privacy Policy</title>
 <style>
-:root { color-scheme: light dark; --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --link:#0066cc; }
-@media (prefers-color-scheme: dark) { :root { --bg:#111113; --fg:#f5f5f7; --muted:#a1a1a6; --link:#4da3ff; } }
+:root { color-scheme: light dark; --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --link:#0066cc; --rule:#d2d2d7; }
+@media (prefers-color-scheme: dark) { :root { --bg:#111113; --fg:#f5f5f7; --muted:#a1a1a6; --link:#4da3ff; --rule:#3a3a3c; } }
 body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
 main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
 h1 { font-size:2rem; line-height:1.2; margin:0 0 8px; }
@@ -15,15 +15,18 @@ h3 { font-size:1.1rem; margin:1.6em 0 .4em; }
 a { color:var(--link); overflow-wrap:anywhere; }
 ul { padding-left:1.3em; }
 li { margin:.25em 0; }
+table { border-collapse:collapse; width:100%; margin:1em 0; font-size:.94em; }
+th, td { border:1px solid var(--rule); padding:.5em .6em; text-align:left; vertical-align:top; }
 </style>
 </head>
 <body>
 <main>
 <h1>Lingo Privacy Policy</h1>
-<p>Effective date: 7 October 2026</p>
+<p>Effective date: 2 November 2026</p>
 <p>Lingo ("the app") is an app for capturing and reviewing English words, expressions and example sentences. It is developed by Nawaf Alnuayri ("I", "me"). This policy explains:</p>
 <ul>
   <li>what information the app handles on your device and in your iCloud;</li>
+  <li>what happens when you choose to share something from Lingo;</li>
   <li>what information I may receive through Apple's TestFlight service or when you email me;</li>
   <li>what you can do about it.</li>
 </ul>
@@ -31,62 +34,97 @@ li { margin:.25em 0; }
 <ul>
   <li>Lingo has <strong>no accounts or sign-in</strong>, <strong>no advertising</strong>, <strong>no tracking</strong> and <strong>no in-app analytics SDK</strong>.</li>
   <li>What you save in Lingo is stored on your device. If your library is set up to sync with iCloud, it is also stored in <strong>your own private iCloud database</strong>. Lingo itself does not send your saved content to me or to any server I operate.</li>
+  <li>Something you save leaves Lingo only when iCloud syncs it or when you choose to send it, for example in an email, a backup file or a recap image.</li>
   <li>If you test a beta version through TestFlight, Apple automatically shares crash logs and usage information with me. Any feedback you choose to send also reaches me.</li>
   <li>I do not sell your information or use it for advertising.</li>
 </ul>
+<h3>Where your information goes</h3>
+<table>
+  <thead><tr><th>Place</th><th>What is there</th><th>Who can reach it</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Your device</strong></td><td>Your library, learning activity, settings, widget data and text waiting from the Share Extension</td><td>You, and anyone using your device. Widgets show some of it on your Home Screen</td></tr>
+    <tr><td><strong>Your private iCloud</strong></td><td>Your library and learning activity, when sync is on</td><td>You, through Lingo on devices signed in to the same Apple Account. Apple stores it. It is not visible to me</td></tr>
+    <tr><td><strong>Wherever you send it</strong></td><td>Backup files, recap images and emails you choose to send</td><td>Whoever you save or send them to, and the services you use to do it</td></tr>
+    <tr><td><strong>Me</strong></td><td>Emails you send me, and the TestFlight information described in Part 2</td><td>Me. Apple also holds its own TestFlight records</td></tr>
+  </tbody>
+</table>
 <h2>Part 1: Information handled inside Lingo</h2>
 <h3>What you create in the app</h3>
 <p>Lingo stores the content you create and your learning activity so the app can work:</p>
 <ul>
-  <li><strong>Your library:</strong> the words, expressions and other items you save, including their meanings, examples, your personal examples, notes, source names, tags and collections. It also includes items you add from Lingo's built-in catalog.</li>
-  <li><strong>Learning activity:</strong> your review and practice history (ratings, dates and next-review intervals), the days you studied (used for your streak), and which item was shown as your Word of the Day each day. Study days and Word of the Day entries record the date and your device's time zone.</li>
-  <li><strong>Drafts and edit history,</strong> which Lingo keeps so that changes stay consistent across your devices.</li>
+  <li><strong>Your library:</strong> the words, expressions and other items you save, including their meanings, second meanings, examples, your personal examples, notes, source names, tags and collections. It also includes items you add from Lingo's built-in catalog.</li>
+  <li><strong>Learning activity:</strong> your review and practice history (ratings, dates and next-review intervals), the days you studied (used for your streak), which item was shown as your Word of the Day each day, and the stamps you have earned. Study days and Word of the Day entries record the date and your device's time zone.</li>
+  <li><strong>Drafts and edit history:</strong> words you have started but not finished, and earlier versions of fields you changed, which Lingo keeps so that changes stay consistent across your devices.</li>
 </ul>
 <h3>Where it is stored</h3>
-<p><strong>On your device.</strong> Your library and activity are stored on your device.</p>
+<p><strong>On your device.</strong> Your library and activity are stored on your device. If you back up your device with iCloud Backup or to a computer, Apple's device backup can include this data.</p>
 <p><strong>In iCloud, when your library is set up to sync.</strong> If your library is set up to sync and you are signed in to iCloud, Lingo also stores it in your private iCloud database using Apple's CloudKit service, so it can sync across devices signed in to the same Apple Account.</p>
 <ul>
   <li>Apple stores and handles this data under Apple's own privacy policy.</li>
   <li>Records in your private iCloud database are not visible to me in Apple's CloudKit developer tools.</li>
+  <li>Sync is automatic. Lingo has no switch to turn it off for a library that is set up to sync. It uses your iCloud storage, and it depends on your connection and on Apple's service.</li>
   <li>A library created by an earlier version of Lingo, before iCloud sync was available, stays <strong>on your device only</strong> and is not uploaded. Lingo's Settings shows when sync is off for your library.</li>
   <li>If you are not signed in to iCloud, your data stays on your device.</li>
+  <li>Your settings, the data for widgets and text waiting from the Share Extension are not synced.</li>
 </ul>
 <p>Lingo also receives silent background notifications from Apple's CloudKit service. These only tell the app that newer data is available in your iCloud, so it can update.</p>
 <h3>Settings stored on your device</h3>
 <p>Lingo stores a small number of preferences on your device, for example:</p>
 <ul>
-  <li>your interface language and appearance;</li>
-  <li>whether the daily reminder is on, and your pinned collections;</li>
-  <li>an unfinished review session, so you can resume it;</li>
+  <li>your interface language, appearance and highlighter color;</li>
+  <li>whether review reminders are on and at what time, and your pinned collections;</li>
+  <li>your pronunciation voice and practice timer choices;</li>
+  <li>an unfinished review or practice session, so you can resume it;</li>
   <li>which starter suggestions you have dismissed;</li>
-  <li>the date of your last backup export, and whether you have finished the introduction.</li>
+  <li>the date of your last backup export, the last weekly recap you have seen, and whether you have finished the introduction.</li>
 </ul>
-<p>These preferences stay on your device and are not sent to me.</p>
-<h3>Daily reminder</h3>
-<p>If you turn on the daily reminder, Lingo asks your permission to show notifications. The reminder is scheduled <strong>on your device</strong>. It contains only general text, such as "Time to review", not your saved content, and it is not sent through any server I operate. You can turn it off in Lingo or in your device's notification settings.</p>
+<p>These preferences stay on your device. Lingo does not send them to me, except that a Send Feedback email you choose to send names the language Lingo shows, as described in Part 2. They are not included in the backups you export from Lingo.</p>
+<h3>Widgets</h3>
+<p>Lingo keeps a small file on your device for its widgets, whether or not you have added one. It holds your Word of the Day (with its meaning and example once you have practised it), your streak, how many cards are due and the first few of them, your learning totals, your newest weak point, and your language, highlighter color and time zone.</p>
+<p>The file sits in a private storage area shared only by Lingo, its widgets and its Share Extension. It is not synced, not included in the backups you export from Lingo, and not sent to me. Widgets show this text wherever you place them, such as your Home Screen, so anyone who can see your screen can read it. You can remove a widget at any time.</p>
+<h3>Saving text from other apps</h3>
+<p>If you choose Lingo in another app's share sheet, the Share Extension receives what that app shares and shows you the text before anything is saved. When you save, it keeps:</p>
+<ul>
+  <li>the text, up to 500 characters;</li>
+  <li>a meaning and an example, if you type them;</li>
+  <li>the time you saved it, and a suggested item type.</li>
+</ul>
+<p>Lingo does not keep the web address, the page title or the name of the app you shared from. A link shared on its own is not saved.</p>
+<p>The text waits in a small file in the private storage area described above until you next open Lingo. It then becomes a draft, which syncs like your other drafts, and the file is removed. A file Lingo cannot read stays there until you uninstall Lingo.</p>
+<h3>Pronunciation</h3>
+<p>When you tap a pronunciation button, Lingo asks the voices installed on your device to read the text aloud. Lingo uses Apple's speech system for this, does not use your microphone, and does not send the text to me or to any server I operate. The voice you choose is stored as a preference on your device.</p>
+<h3>Review reminders</h3>
+<p>If you turn on review reminders, Lingo asks your permission to show notifications. Reminders are scheduled <strong>on your device</strong>, at the time you choose, on days when cards are ready for review. They contain general text and a count, such as "Time to review" and "3 cards are ready for review", not your saved content, and they are not sent through any server I operate. You can turn them off in Lingo or in your device's notification settings.</p>
 <h3>Backups you export</h3>
-<p>You can choose to export a backup of your library as a file and save it wherever you choose, for example in the Files app. You can also choose a backup file to import. Lingo does not upload these files anywhere; what happens to an exported file depends on where you save or share it.</p>
+<p>You can choose to export a backup of your library as a file and save it wherever you choose, for example in the Files app. You can also choose a backup file to import. A backup holds your library, drafts, edit history, reviews, study days and stamps as a plain, unencrypted file, so anyone who has the file can read it. Lingo does not upload these files anywhere; what happens to an exported file depends on where you save or share it.</p>
+<h3>Weekly recap</h3>
+<p>Lingo can show you a weekly recap. If you tap Share, Lingo draws an image on your device with the dates, the number of items added, reviews and newly mastered items, and a seven-day chart. It does not include your saved words. Your device's share sheet then lets you choose where to send or save it, and Lingo does not see what you choose.</p>
 <h3>Built-in catalog</h3>
-<p>Lingo includes a built-in catalog of learning content stored inside the app. Browsing and searching it happens on your device, and your searches are not sent anywhere.</p>
+<p>Lingo includes a built-in catalog of learning content stored inside the app. Browsing and searching it happens on your device, and your searches are not sent anywhere. New catalog content arrives only with updates to the app.</p>
+<h3>Other software in Lingo</h3>
+<p>Apart from Apple's own system software, Lingo includes one third-party code library, GRDB, which reads the built-in catalog on your device. It does not collect information or use the network.</p>
 <h3>What Lingo does not do</h3>
 <p>Lingo does not:</p>
 <ul>
   <li>ask for your name, email address or phone number;</li>
   <li>use your location, contacts, photos, camera or microphone;</li>
+  <li>read your clipboard (it places text there only if you tap Copy after an email can't be opened);</li>
+  <li>open websites or load web content;</li>
   <li>use advertising or advertising identifiers;</li>
   <li>include third-party analytics, crash-reporting or tracking tools.</li>
 </ul>
 <p>Lingo itself does not send usage analytics to me. The only usage information I receive is what Apple shares through TestFlight, described below.</p>
+<p>Lingo writes technical error messages to your device's own log. It does not send these to me.</p>
 <h2>Part 2: Information I may receive</h2>
 <h3>TestFlight beta testing</h3>
 <p>If you test a beta version of Lingo through Apple's TestFlight, <a href="https://www.apple.com/legal/privacy/data/en/test-flight/">Apple's TestFlight &amp; Privacy terms</a> apply.</p>
 <p><strong>Shared automatically.</strong> Apple automatically collects crash logs and usage information and shares them with me; testers cannot opt out of this. This can include, for example:</p>
 <ul>
-  <li>device model, operating system version, language and time zone;</li>
-  <li>the number of sessions and crashes;</li>
+  <li>your device model and a device identifier, operating system version and language;</li>
+  <li>the version you have installed, and the number of installs, sessions and crashes;</li>
   <li>crash logs.</li>
 </ul>
-<p><strong>Shared only if you choose.</strong> If you send feedback, Apple shares it with me. It may include screenshots and comments, and anything you choose to include in it, such as text you saved in Lingo.</p>
+<p><strong>Shared only if you choose.</strong> If you send feedback, Apple shares it with me. It may include screenshots and comments, and anything you choose to include in it, such as text you saved in Lingo. Apple also adds technical details with it, such as your time zone, carrier, connection type, battery level, free disk space and screen resolution.</p>
 <p><strong>Public-link testers are anonymous to me.</strong> If you joined the beta only through a public TestFlight link, you appear in my tester list without your name or email address. That stays true unless you choose to include identifying details yourself, for example in feedback, a screenshot or an email. If you were invited by email, Apple's TestFlight terms describe when your name and email may be shared with me.</p>
 <p><strong>How I use it.</strong> I use TestFlight information only to find and fix problems and to improve Lingo.</p>
 <p><strong>No sharing.</strong> I do not share raw TestFlight data with third parties, including external AI tools.</p>
@@ -95,14 +133,22 @@ li { margin:.25em 0; }
   <li><strong>Apple's records:</strong> Apple keeps its own TestFlight records under Apple's terms. Apple states that it keeps feedback for one year, and may keep crash log and usage data until bugs are resolved.</li>
   <li><strong>My copies:</strong> I keep any copies I make of TestFlight diagnostics and feedback for no longer than 12 months.</li>
 </ul>
+<h3>Send Feedback and Suggest Content</h3>
+<p>Both options in Lingo's Settings prepare an email to me in your own mail app. Lingo does not send anything itself: you can read and change the draft, and nothing is sent unless you send it from your mail app. Your mail provider handles the message.</p>
+<ul>
+  <li><strong>Send Feedback</strong> starts an email with Lingo's version and build, your iOS version, your device model, the language Lingo shows and whether you chose it, and your device's language and region. It adds no library content, logs, identifiers or screenshots.</li>
+  <li><strong>Suggest Content</strong> starts an email with the word or phrase, meaning and example you typed, and Lingo's version. Lingo does not keep the form after you leave it.</li>
+</ul>
+<p>If no mail app can open the draft, Lingo shows my address and offers to copy the text for you.</p>
 <h3>Email</h3>
-<p>If you email me, I receive your email address and anything you include in the message, such as screenshots or text from your library. I use it only to reply to you and to improve Lingo. I keep support emails for no longer than 12 months.</p>
+<p>If you email me, I receive your email address and anything you include in the message, such as screenshots or text from your library. I use it only to reply to you and to improve Lingo. I keep support emails for no longer than 12 months. If I add a suggested word to Lingo's built-in catalog, the word, meaning or example can stay in the catalog after the email is deleted.</p>
 <h2>Children</h2>
 <p>Lingo is a general learning app. It has no accounts and does not ask anyone for their name, age or contact details. If you believe a child has sent me personal information by email or through TestFlight feedback, contact me. I will delete the copies under my control.</p>
 <h2>Deleting your data</h2>
-<p><strong>Inside Lingo.</strong> Deleting an item removes it from your library. If your library syncs with iCloud, the deletion also reaches your private iCloud copy and your other devices. To make sure the deletion reaches all of them, Lingo may keep a small deletion marker: an identifier, not the item's text.</p>
-<p><strong>Uninstalling Lingo.</strong> Uninstalling removes the data stored on that device. It does <strong>not</strong> delete the copy in your private iCloud database. That copy stays in your iCloud until you delete it separately, and may be restored if you install Lingo again with the same Apple Account.</p>
+<p><strong>Inside Lingo.</strong> Deleting an item removes it from your library, with its review and edit history. If your library syncs with iCloud, the deletion also reaches your private iCloud copy and your other devices. To make sure the deletion reaches all of them, Lingo may keep a small deletion marker: an identifier, not the item's text. Your Word of the Day history can keep the same identifier.</p>
+<p><strong>Uninstalling Lingo.</strong> Uninstalling removes the data stored on that device, including its settings, widget data and any text waiting from the Share Extension. It does <strong>not</strong> delete the copy in your private iCloud database. That copy stays in your iCloud until you delete it separately, and may be restored if you install Lingo again with the same Apple Account.</p>
 <p><strong>Deleting Lingo's iCloud data.</strong> You can manage the data stored in your iCloud from your device's iCloud storage settings. Apple explains this in <a href="https://support.apple.com/en-us/108922">Manage your iCloud storage on your Apple device</a>. If you need help removing Lingo's iCloud data, contact me.</p>
+<p><strong>Files you exported.</strong> Backup files and recap images you saved or sent are separate copies. Lingo cannot delete them, so you need to delete them where you keep them.</p>
 <p><strong>Information you sent me.</strong> I will honor requests to delete the copies of your emails, feedback or diagnostics that are under my control. Records that Apple keeps for TestFlight are held by Apple under Apple's terms, and I can only delete the copies I control.</p>
 <h2>Changes to this policy</h2>
 <p>If this policy changes, I will update this page and its effective date.</p>
